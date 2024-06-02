@@ -26,7 +26,7 @@
         <nav >
             <a href="#" class="logo">The Gang</a>
             <ul>
-                <li><a href="#">Sing Up</a></li>
+                <li><a href="javascript:()" onclick="showPopup();">Sing Up</a></li>
                 <li><a href="#story">The Story</a> </li>
                 <li><a href="#more-info">More Info </a></li>
             </ul>
@@ -35,7 +35,7 @@
             <div class="wrapper">
                 <h2>Join Our Fun Club </h2>
                 <p>Every week we have  <span class="highlight">a party.</span> If you want to join us then join our fun club . Members will also receive pictures of us in all kinds of shapes and sizes . Cool huh? </p>
-                    <button class="cta">Sing Me up!</button>
+                    <button class="cta" onclick="showPopup();">Sing Me up!</button>
             </div>
         </div>
         <div class="sep"></div>
@@ -66,11 +66,12 @@
                 Made by Soham.
             </div>
         </footer>
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="blanket"></div>
             <div class="content">
                 <h2> Filling Your Details</h2>
                 <form action="">
+                    <div class="row">
                     <div class="item">
                         <label >Your First Name</label>
                         <input type="text" placeholder="SOHAM" value="Shirley">
@@ -79,8 +80,9 @@
                     <div class="item">
                         <label >Your Last Name</label>
                         <input type="text" placeholder="DEB">
-                           
+                    </div>      
                     </div>
+                 <div class="row">
                     <div class="item">
                         <label >Your Favourite Color</label>
                         <input type="text" placeholder="Black">
@@ -91,10 +93,14 @@
                         <input type="text" placeholder="Momo">
                            
                     </div>
+                </div>
                     <button class="cta">I Want In</button>
                 </form>
-                <button class="close">Close</button>
+                <button class="close" onclick="hidePopup()";>Close</button>
             </div>
         </div>
+
+<script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
